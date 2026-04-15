@@ -1,5 +1,4 @@
 # MATH MASTER
-#### Video Demo:  <https://youtu.be/RCCY11A_vCE?si=cfI3TiK1r4EOdj7L>
 
 #### Description:
 # Introduction

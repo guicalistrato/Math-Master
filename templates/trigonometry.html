@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Trigonometry
+{% endblock %}
+
+{% block main %}
+    <div style="text-align: left;">
+        <h1 style="text-align: center;">Trigonometry</h1>
+        <h2>Introduction to Trigonometry</h2>
+
+        <p>Trigonometry is a branch of mathematics that deals with the relationships between the angles and sides of triangles. It plays a critical role in many areas of science, engineering, and technology, offering tools to solve problems involving angles, distances, and periodic phenomena.</p>
+
+        <h3>What is Trigonometry?</h3>
+        <p>The term "trigonometry" comes from the Greek words "trigonon" (triangle) and "metron" (measure). At its core, trigonometry is the study of how the angles and sides of triangles relate to one another. While it primarily focuses on right-angled triangles, trigonometry also extends to other areas, including circular and spherical functions.</p>
+
+        <h3>Key Principles of Trigonometry</h3>
+        <p>Understanding trigonometry begins with grasping its fundamental concepts and principles. Here are the most important ones:</p>
+
+        <ul>
+            <li><strong>Right-Angled Triangles</strong>: Trigonometry is primarily based on the properties of right-angled triangles, where one of the angles is exactly 90°.</li>
+            <li><strong>The Trigonometric Ratios</strong>: These ratios relate the sides of a right triangle to its angles:
+                <ul>
+                    <li><strong>Sine (sin)</strong>: The ratio of the length of the opposite side to the hypotenuse.</li>
+                    <li><strong>Cosine (cos)</strong>: The ratio of the length of the adjacent side to the hypotenuse.</li>
+                    <li><strong>Tangent (tan)</strong>: The ratio of the length of the opposite side to the adjacent side.</li>
+                </ul>
+            </li>
+            <li><strong>The Reciprocal Ratios</strong>: These are derived from the basic trigonometric ratios:
+                <ul>
+                    <li><strong>Cosecant (csc)</strong>: The reciprocal of sine, csc = 1/sin.</li>
+                    <li><strong>Secant (sec)</strong>: The reciprocal of cosine, sec = 1/cos.</li>
+                    <li><strong>Cotangent (cot)</strong>: The reciprocal of tangent, cot = 1/tan.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>The Unit Circle</h3>
+        <p>The unit circle is a fundamental concept in trigonometry. It is a circle with a radius of 1 unit centered at the origin of a coordinate plane. The unit circle helps define the trigonometric functions for all angles, not just those in right-angled triangles.</p>
+        <p>On the unit circle:</p>
+        <ul>
+            <li>The x-coordinate of a point corresponds to the cosine of the angle.</li>
+            <li>The y-coordinate corresponds to the sine of the angle.</li>
+        </ul>
+
+        <h3>Key Trigonometric Identities</h3>
+        <p>Trigonometric identities are equations that hold true for all angles. They are essential for solving equations and simplifying expressions in trigonometry. Some important identities include:</p>
+
+        <ul>
+            <li><strong>Pythagorean Identity</strong>: sin²(θ) + cos²(θ) = 1</li>
+            <li><strong>Sum and Difference Formulas</strong>: These express the trigonometric functions of the sum or difference of two angles:
+                <ul>
+                    <li>sin(A ± B) = sin(A)cos(B) ± cos(A)sin(B)</li>
+                    <li>cos(A ± B) = cos(A)cos(B) ∓ sin(A)sin(B)</li>
+                </ul>
+            </li>
+            <li><strong>Double Angle Formulas</strong>: These relate the trigonometric functions of double an angle:
+                <ul>
+                    <li>sin(2A) = 2sin(A)cos(A)</li>
+                    <li>cos(2A) = cos²(A) - sin²(A)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Applications of Trigonometry</h3>
+        <p>Trigonometry is a powerful tool with numerous practical applications:</p>
+
+        <ul>
+            <li><strong>Navigation and Surveying</strong>: Trigonometry is used to calculate distances, angles, and elevations in navigation and land surveying.</li>
+            <li><strong>Astronomy</strong>: It helps measure distances to stars, map celestial objects, and calculate the positions of planets and moons.</li>
+            <li><strong>Engineering and Architecture</strong>: Engineers and architects use trigonometric principles to design structures, calculate forces, and analyze motion.</li>
+            <li><strong>Wave Mechanics</strong>: Trigonometric functions describe the behavior of waves, including sound, light, and water waves.</li>
+            <li><strong>Periodic Phenomena</strong>: Trigonometry models periodic events such as seasonal changes, tides, and oscillations in physics.</li>
+        </ul>
+
+        <h3>Trigonometric Functions and Graphs</h3>
+        <p>Trigonometric functions like sine, cosine, and tangent are periodic, meaning they repeat their values at regular intervals. Their graphs display these periodic patterns and are used to analyze oscillations and waves.</p>
+
+        <ul>
+            <li><strong>Sine and Cosine Graphs</strong>: Both have a wave-like pattern, with sine starting at 0 and cosine starting at its maximum value.</li>
+            <li><strong>Tangent Graph</strong>: The tangent graph has asymptotes where the function is undefined, creating a series of repeating curves.</li>
+        </ul>
+
+        <h3>Conclusion</h3>
+        <p>Trigonometry is a cornerstone of mathematics that provides the tools to study and understand angles, triangles, and periodic phenomena. Its principles extend far beyond the classroom, finding applications in diverse fields such as engineering, navigation, physics, and astronomy. By mastering trigonometry, you gain the ability to solve complex problems and uncover the hidden relationships between angles and distances.</p>
+    </div>
+
+    <footer>
+        <p><a href="/learn">Click Here </a></li> to return to Learn</p>
+    </footer>
+{% endblock %}

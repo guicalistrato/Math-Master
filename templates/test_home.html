@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Test Home
+{% endblock %}
+
+{% block main %}
+    <p>Hello, {{ username }}</p>
+    <form action="/test_home" method="post">
+        <button class="btn btn-light" type="submit">Start Test</button>
+    </form>
+{% endblock %}

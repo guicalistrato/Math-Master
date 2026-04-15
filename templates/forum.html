@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Forum
+{% endblock %}
+
+{% block main %}
+    <h1> Forum </h1>
+    <p>Welcome to Math Master's Forum! Here you can share ideas, ask questions, help others and many more! Remember to keep respectful and behave in a good way!</p>
+
+    <h2>Posts</h2>
+    {% for posts in posts %}
+    <div class="mb-5" style="text-align: left;">
+        <p>{{ posts.user }} posted: {{ posts.post }} </p>
+        <p style="color: #999999;">{{ posts.time }}</p>
+    </div>
+    {% endfor %}
+    <form action="/forum" method="post">
+        <div class="mb-3">
+            <label for="exampleTextarea" class="form-label">Your Text</label>
+            <textarea class="form-control" id="Textarea" name="post" rows="5" placeholder="Write your post here..."></textarea>
+        </div>
+        <button class="btn btn-light" type="submit">Post</button>
+    </form>
+
+
+{% endblock %}

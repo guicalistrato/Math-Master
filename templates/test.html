@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Test
+{% endblock %}
+
+{% block main %}
+    <div class="mb-5" style="text-align: left;">
+        <h1>TEST</h1>
+        <h6 style="color: #999999;">ID: {{ test[0].test_id }}</h6>
+    </div>
+
+
+    <div style="text-align: left;">
+        <form action="/test" method="post">
+            <!-- Question 1 -->
+            <h3>Question 1</h3>
+            <h6>{{ test[0].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_1" id="q1_a" value="a">
+                    <label for="q1_a">a) {{ test[0].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_1" id="q1_b" value="b">
+                    <label for="q1_b">b) {{ test[0].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_1" id="q1_c" value="c">
+                    <label for="q1_c">c) {{ test[0].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_1" id="q1_d" value="d">
+                    <label for="q1_d">d) {{ test[0].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 2 -->
+            <h3>Question 2</h3>
+            <h6>{{ test[1].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_2" id="q2_a" value="a">
+                    <label for="q2_a">a) {{ test[1].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_2" id="q2_b" value="b">
+                    <label for="q2_b">b) {{ test[1].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_2" id="q2_c" value="c">
+                    <label for="q2_c">c) {{ test[1].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_2" id="q2_d" value="d">
+                    <label for="q2_d">d) {{ test[1].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 3 -->
+            <h3>Question 3</h3>
+            <h6>{{ test[2].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_3" id="q3_a" value="a">
+                    <label for="q3_a">a) {{ test[2].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_3" id="q3_b" value="b">
+                    <label for="q3_b">b) {{ test[2].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_3" id="q3_c" value="c">
+                    <label for="q3_c">c) {{ test[2].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_3" id="q3_d" value="d">
+                    <label for="q3_d">d) {{ test[2].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 4 -->
+            <h3>Question 4</h3>
+            <h6>{{ test[3].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_4" id="q4_a" value="a">
+                    <label for="q4_a">a) {{ test[3].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_4" id="q4_b" value="b">
+                    <label for="q4_b">b) {{ test[3].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_4" id="q4_c" value="c">
+                    <label for="q4_c">c) {{ test[3].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_4" id="q4_d" value="d">
+                    <label for="q4_d">d) {{ test[3].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 5 -->
+            <h3>Question 5</h3>
+            <h6>{{ test[4].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_5" id="q5_a" value="a">
+                    <label for="q5_a">a) {{ test[4].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_5" id="q5_b" value="b">
+                    <label for="q5_b">b) {{ test[4].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_5" id="q5_c" value="c">
+                    <label for="q5_c">c) {{ test[4].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_5" id="q5_d" value="d">
+                    <label for="q5_d">d) {{ test[4].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 6 -->
+            <h3>Question 6</h3>
+            <h6>{{ test[5].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_6" id="q6_a" value="a">
+                    <label for="q6_a">a) {{ test[5].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_6" id="q6_b" value="b">
+                    <label for="q6_b">b) {{ test[5].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_6" id="q6_c" value="c">
+                    <label for="q6_c">c) {{ test[5].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_6" id="q6_d" value="d">
+                    <label for="q6_d">d) {{ test[5].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 7 -->
+            <h3>Question 7</h3>
+            <h6>{{ test[6].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_7" id="q7_a" value="a">
+                    <label for="q7_a">a) {{ test[6].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_7" id="q7_b" value="b">
+                    <label for="q7_b">b) {{ test[6].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_7" id="q7_c" value="c">
+                    <label for="q7_c">c) {{ test[6].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_7" id="q7_d" value="d">
+                    <label for="q7_d">d) {{ test[6].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 8 -->
+            <h3>Question 8</h3>
+            <h6>{{ test[7].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_8" id="q8_a" value="a">
+                    <label for="q8_a">a) {{ test[7].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_8" id="q8_b" value="b">
+                    <label for="q8_b">b) {{ test[7].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_8" id="q8_c" value="c">
+                    <label for="q8_c">c) {{ test[7].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_8" id="q8_d" value="d">
+                    <label for="q8_d">d) {{ test[7].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 9 -->
+            <h3>Question 9</h3>
+            <h6>{{ test[8].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_9" id="q9_a" value="a">
+                    <label for="q9_a">a) {{ test[8].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_9" id="q9_b" value="b">
+                    <label for="q9_b">b) {{ test[8].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_9" id="q9_c" value="c">
+                    <label for="q9_c">c) {{ test[8].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_9" id="q9_d" value="d">
+                    <label for="q9_d">d) {{ test[8].d }}</label>
+                </p>
+            </div>
+
+            <!-- Question 10 -->
+            <h3>Question 10</h3>
+            <h6>{{ test[9].question_text }}</h6>
+            <div class="mb-3">
+                <p>
+                    <input type="radio" name="question_10" id="q10_a" value="a">
+                    <label for="q10_a">a) {{ test[9].a }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_10" id="q10_b" value="b">
+                    <label for="q10_b">b) {{ test[9].b }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_10" id="q10_c" value="c">
+                    <label for="q10_c">c) {{ test[9].c }}</label>
+                </p>
+                <p>
+                    <input type="radio" name="question_10" id="q10_d" value="d">
+                    <label for="q10_d">d) {{ test[9].d }}</label>
+                </p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit Answers</button>
+        </form>
+    </div>
+{% endblock %}

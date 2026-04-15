@@ -1,0 +1,35 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #4287f5;
+}
+nav .navbar-brand .green
+{
+    color: #1cba73;
+}
+
+body {
+    color: white; /* Set text color to white */
+}
+
+.image {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.big-image {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

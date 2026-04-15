@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h2>Results</h2>
+        <p>You Got {{ questions_correct }}/10 questions right. {{ message }}</p>
+    </div>
+    <div class="table">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Subject</th>
+                    <th>Your Answer</th>
+                    <th>Correct Answer</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for question in questions %}
+                <tr>
+                    <td>{{ question }}</td>
+                    <td>{{ subject | index(loop.index0) }}</td>
+                    <td>{{ user_answers | index(loop.index0) }}</td>
+                    <td>{{ correct_answers | index(loop.index0) }}</td>
+                    <td>
+                        <span style="color: {% if correctness | index(loop.index0) == 'correct' %}green{% else %}red{% endif %};">
+                            {{ correctness | index(loop.index0) }}
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ChatGPT helped -->
+    <div style="text-align: left;">
+        {% if review %}
+            <p>You should review:</p>
+            <ul>
+                {% for item in review %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+            <p>since you got question(s) wrong in this(these) subject(s).</p>
+        {% else %}
+            <p>Great job! You got everything correct.</p>
+        {% endif %}
+    </div>
+{% endblock %}

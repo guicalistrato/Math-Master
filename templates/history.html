@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <div class="table">
+        <h2>History</h2>
+        <table class="table table-bordered table-dark">
+            <thead>
+                <tr>
+                    <th>History ID</th>
+                    <th>Correct Answers</th>
+                    <th>Time</th>
+                    <th>Test ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through the database entries to display them in this table -->
+                {% for info in info %}
+                    <tr>
+                        <td>{{ info.id }}</td>
+                        <td>{{ info.correct_answers }}/10</td>
+                        <td>{{ info.time }}</td>
+                        <td>{{ info.test_id }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

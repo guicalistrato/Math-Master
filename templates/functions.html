@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Functions
+{% endblock %}
+
+{% block main %}
+    <div style="text-align: left;">
+        <h1 style="text-align: center;">Functions</h1>
+        <h2>Introduction to Math Functions</h2>
+
+        <p>In mathematics, a <strong>function</strong> is a fundamental concept that represents a relationship between a set of inputs and a set of possible outputs. For each input, there is exactly one corresponding output. Functions are everywhere in mathematics and are crucial in understanding algebra, calculus, and many real-world problems.</p>
+
+        <h3>What is a Function?</h3>
+        <p>A function can be thought of as a machine: you feed in an input, and the machine processes it according to a specific rule to give you an output. The input is called the <strong>domain</strong>, and the output is called the <strong>range</strong>. The function essentially "maps" each input to an output.</p>
+
+        <p>For example, consider the function <code>f(x) = 2x + 1</code>. For every value of <code>x</code>, the function will give you a unique output. If <code>x = 3</code>, then <code>f(3) = 2(3) + 1 = 7</code>.</p>
+
+        <h3>Key Principles of Functions</h3>
+        <ul>
+            <li><strong>Domain and Range</strong>: The <strong>domain</strong> refers to the set of all possible input values that a function can accept, while the <strong>range</strong> is the set of all possible output values. For instance, in the function <code>f(x) = 2x + 1</code>, the domain is all real numbers, and the range is also all real numbers.</li>
+            <li><strong>One Output for Each Input</strong>: A function must assign exactly one output to each input. If an input gives multiple outputs, it is not a function. For example, the equation <code>y^2 = x</code> is not a function because both positive and negative values of <code>y</code> correspond to the same value of <code>x</code>.</li>
+            <li><strong>Notation</strong>: Functions are commonly denoted as <code>f(x)</code>, where <code>f</code> is the name of the function, and <code>x</code> is the input variable. The output is the result of applying the function to <code>x</code>. In the function <code>f(x) = 2x + 1</code>, you substitute a value of <code>x</code> to get the corresponding output.</li>
+            <li><strong>Vertical Line Test</strong>: A graphical test for determining whether a curve represents a function is the vertical line test. If any vertical line intersects the graph of the relation more than once, it is not a function.</li>
+        </ul>
+
+        <h3>Types of Functions</h3>
+        <p>There are several key types of functions, each with distinct properties:</p>
+
+        <ul>
+            <li><strong>Linear Functions</strong>: These are functions that create a straight-line graph. The general form is <code>f(x) = mx + b</code>, where <code>m</code> is the slope and <code>b</code> is the y-intercept. Linear functions model constant rates of change, such as the relationship between distance and time at a constant speed.</li>
+            <li><strong>Quadratic Functions</strong>: A quadratic function has the form <code>f(x) = ax^2 + bx + c</code>. Its graph is a parabola, which opens upward or downward depending on the value of <code>a</code>. Quadratic functions are used to model various phenomena like projectile motion.</li>
+            <li><strong>Exponential Functions</strong>: These functions involve a variable in the exponent. A common form is <code>f(x) = a^x</code>, where <code>a</code> is a constant. Exponential functions model rapid growth or decay, such as population growth or radioactive decay.</li>
+            <li><strong>Logarithmic Functions</strong>: The inverse of exponential functions, logarithmic functions have the form <code>f(x) = log_a(x)</code>. They are used to model situations where growth or decay happens over time but at a decreasing rate, such as the intensity of sound or earthquake magnitude.</li>
+            <li><strong>Trigonometric Functions</strong>: These functions, including sine (<code>sin</code>), cosine (<code>cos</code>), and tangent (<code>tan</code>), are essential in the study of angles, waves, and oscillations. They are periodic functions, meaning they repeat at regular intervals.</li>
+        </ul>
+
+        <h3>Why Are Functions Important?</h3>
+        <p>Functions are crucial because they help describe the relationship between quantities. In real life, many phenomena can be modeled using functions, from the growth of populations to the movement of objects in physics.</p>
+
+        <p>For example:</p>
+        <ul>
+            <li>In physics, a function can describe the motion of an object over time.</li>
+            <li>In economics, functions are used to model relationships between supply and demand or cost and profit.</li>
+            <li>In biology, functions can represent the spread of diseases or the growth of populations.</li>
+        </ul>
+
+        <h3>Conclusion</h3>
+        <p>Functions are central to mathematics, and understanding them allows us to solve problems and model relationships in a wide variety of fields. Whether you are studying algebra, calculus, or applying mathematics to real-world situations, the concept of a function is essential for making sense of the world around us. Functions allow us to describe how one quantity depends on another, making them an indispensable tool in the study of mathematics and beyond.</p>
+    </div>
+
+    <footer>
+        <p><a href="/learn">Click Here </a></li> to return to Learn</p>
+    </footer>
+{% endblock %}
+

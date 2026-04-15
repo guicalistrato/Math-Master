@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block main %}
+    <h2>Hello, {{ username }}!</h2>
+    <div class="mb-5">
+        <p> Welcome to MathMaster, a website where you can test your math skills, do tests, see the results and learn more about many subjects
+        of this beautiful area of knowledge.
+        </p>
+    <img class="image mb-5" src="/static/mathmaster.png">
+    </div>
+    <div style="text-align: left;">
+        <h5>Explore the features of this website clicking the links below:</h5>
+
+    <ul>
+        <li><a href="/test_home">Tests </a></li>
+        <li><a href="/history">History </a></li>
+        <li><a href="/learn">Learn </a></li>
+        <li><a href="/forum">Forum </a></li>
+    </ul>
+    </div>
+{% endblock %}

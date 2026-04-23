@@ -1,7 +1,7 @@
 # MATH MASTER
 
 #### Description: 
-A simples web application focused in math learning, using Flask.
+A simple web application focused in math learning, using Flask.
 
 # Introduction
 ## Before Development

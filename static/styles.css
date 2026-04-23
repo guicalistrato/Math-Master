@@ -4,14 +4,31 @@ nav .navbar-brand
     font-size: xx-large;
 }
 
+:root {
+    --azul: #7092be;
+    --azul-claro: #99d9ea;
+}
+
 /* Colors for brand */
 nav .navbar-brand .blue
 {
-    color: #4287f5;
+    color: var(--azul);
 }
-nav .navbar-brand .green
+nav .navbar-brand .light-blue
 {
-    color: #1cba73;
+    color: var(--azul-claro);
+}
+
+.nav-link {
+    color: var(--azul); 
+}
+
+.nav-link:hover {
+    color: var(--azul-claro);
+}
+
+.azul {
+    color: var(--azul);
 }
 
 body {

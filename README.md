@@ -1,6 +1,8 @@
 # MATH MASTER
 
-#### Description:
+#### Description: 
+A simples web application focused in math learning, using Flask.
+
 # Introduction
 ## Before Development
 After a lot of time thinking, I opted to do a web-based application using JavaScript, Python, and SQL, because, even though Finance was very challenging, I liked the implementation and seeing it complete was very rewarding.

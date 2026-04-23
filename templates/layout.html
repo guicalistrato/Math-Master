@@ -19,23 +19,23 @@
 
     </head>
 
-    <body style="background-color: #25232e;">
+    <body style="background-color: #151224;">
         <nav class="navbar navbar-expand-md" style="background-color: #131313;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><span class="blue">Math</span><span class="green">Master</span></a>
+                <a class="navbar-brand" href="/"><span class="blue">Math</span><span class="light-blue">Master</span></a>
                 <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar" >
                     {% if session["user_id"] %}
                         <ul class="navbar-nav me-auto mt-2">
-                            <li class="nav-item"><a class="nav-link" href="/test_home" style="color: #4287f5;">Tests</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/history" style="color: #4287f5;">History</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/learn" style="color: #4287f5;">Learn</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/forum" style="color: #4287f5;">Forum</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/test_home">Tests</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/history">History</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/learn">Learn</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
                         </ul>
                         <ul class="navbar-nav ms-auto mt-2">
-                            <li class="nav-item"><a class="nav-link" href="/logout" style="color: #1cba73">Log Out</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
                         </ul>
                     {% else %}
                         <ul class="navbar-nav ms-auto mt-2">
@@ -72,11 +72,6 @@
                     document.querySelector('form[action="https://validator.w3.org/check"] > input[name="fragment"]').value = html;
                 });
             </script>
-                <p><a href="/">Click Here </a></li> to return to Main Page</p>
-                <p>Follow us on:
-                    <a href="/apology" class="text-white">Facebook</a> |
-                    <a href="/apology" class="text-white">Twitter</a> |
-                    <a href="/apology" class="text-white">Instagram</a>
         </footer>
 
     </body>
